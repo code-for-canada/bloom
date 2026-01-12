@@ -78,7 +78,7 @@ services:
   dbseed:
     build:
       context: ./api
-      dockerfile: Dockerfile.dbseed.dev
+      dockerfile: Dockerfile.dbseed
     restart: no
     environment:
       DATABASE_URL: "postgres://postgres:example@db:5432/bloom_prisma"
