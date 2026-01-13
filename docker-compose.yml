@@ -38,10 +38,10 @@ configs:
 services:
   lb:
     image: nginx:stable
-    ports:
-      - "3100:3100"
-      - "3000:3000"
-      - "3001:3001"
+    expose:
+      - "3100"
+      - "3000"
+      - "3001"
     configs:
     - source: nginx
       target: /etc/nginx/nginx.conf
