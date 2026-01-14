@@ -45,6 +45,10 @@ services:
     configs:
     - source: nginx
       target: /etc/nginx/nginx.conf
+    networks:
+      - dokploy-network
+    labels:
+      - traefik.docker.network=dokploy-network
     command:
       - /bin/bash
       - -c
@@ -63,6 +67,8 @@ services:
     restart: no
     expose:
       - "5432"
+    networks:
+      - dokploy-network
     environment:
       PGUSER: "postgres"
       POSTGRES_USER: "postgres"
@@ -80,6 +86,8 @@ services:
       context: ./api
       dockerfile: Dockerfile.dbseed
     restart: no
+    networks:
+      - dokploy-network
     environment:
       DATABASE_URL: "postgres://postgres:example@db:5432/bloom_prisma"
     command:
@@ -96,6 +104,8 @@ services:
     restart: no
     expose:
       - "3100"
+    networks:
+      - dokploy-network
     deploy:
       endpoint_mode: 'dnsrr'
       mode: replicated
@@ -122,6 +132,8 @@ services:
     restart: no
     expose:
       - "3001"
+    networks:
+      - dokploy-network
     deploy:
       endpoint_mode: 'dnsrr'
       mode: replicated
@@ -144,6 +156,8 @@ services:
     restart: no
     expose:
       - "3000"
+    networks:
+      - dokploy-network
     deploy:
       endpoint_mode: 'dnsrr'
       mode: replicated
@@ -175,3 +189,7 @@ services:
         condition: service_completed_successfully
       lb:
         condition: service_started
+
+networks:
+  dokploy-network:
+    external: true
