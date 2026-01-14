@@ -48,29 +48,7 @@ services:
     networks:
       - dokploy-network
     labels:
-      - traefik.enable=true
       - traefik.docker.network=dokploy-network
-
-      # Public site (port 3000)
-      - traefik.http.routers.ahf-public.rule=Host(`affordable-housing-finder.codefor.ca`)
-      - traefik.http.routers.ahf-public.entrypoints=websecure
-      - traefik.http.routers.ahf-public.tls.certresolver=letsencrypt
-      - traefik.http.routers.ahf-public.service=ahf-public
-      - traefik.http.services.ahf-public.loadbalancer.server.port=3000
-
-      # API (port 3100)
-      - traefik.http.routers.ahf-api.rule=Host(`api.affordable-housing-finder.codefor.ca`)
-      - traefik.http.routers.ahf-api.entrypoints=websecure
-      - traefik.http.routers.ahf-api.tls.certresolver=letsencrypt
-      - traefik.http.routers.ahf-api.service=ahf-api
-      - traefik.http.services.ahf-api.loadbalancer.server.port=3100
-
-      # Partners (port 3001)
-      - traefik.http.routers.ahf-partners.rule=Host(`partners.affordable-housing-finder.codefor.ca`)
-      - traefik.http.routers.ahf-partners.entrypoints=websecure
-      - traefik.http.routers.ahf-partners.tls.certresolver=letsencrypt
-      - traefik.http.routers.ahf-partners.service=ahf-partners
-      - traefik.http.services.ahf-partners.loadbalancer.server.port=3001
     command:
       - /bin/bash
       - -c
