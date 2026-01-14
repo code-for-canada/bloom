@@ -42,6 +42,13 @@ export const stagingSeed = async (
   prismaClient: PrismaClient,
   jurisdictionName: string,
 ) => {
+  // Check if database is already seeded
+  const existingJurisdiction = await prismaClient.jurisdictions.findFirst();
+  if (existingJurisdiction) {
+    console.log('Database already seeded, skipping...');
+    return;
+  }
+
   // Seed feature flags
   await createAllFeatureFlags(prismaClient);
   // create main jurisdiction with as many feature flags turned on as possible
