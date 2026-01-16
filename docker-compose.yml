@@ -141,7 +141,7 @@ services:
     environment:
       NODE_ENV: "production"
       NEXTJS_PORT: 3001
-      BACKEND_API_BASE: "https://api.affordable-housing-finder.codefor.ca"
+      BACKEND_API_BASE: "http://lb:3100"
       LISTINGS_QUERY: "/listings"
     depends_on:
       dbseed: # wait for the db to have data so next build works correctly
@@ -165,8 +165,8 @@ services:
     environment:
       NODE_ENV: "production"
       NEXTJS_PORT: 3000
-      BACKEND_API_BASE: "https://api.affordable-housing-finder.codefor.ca"
-      BACKEND_API_BASE_NEW: "https://api.affordable-housing-finder.codefor.ca"
+      BACKEND_API_BASE: "http://lb:3100"
+      BACKEND_API_BASE_NEW: "http://lb:3100"
       LISTINGS_QUERY: "/listings"
       MAX_BROWSE_LISTINGS: 10
       HOUSING_COUNSELOR_SERVICE_URL: "/get-assistance"
