@@ -289,12 +289,9 @@
   "application.referralApplication.furtherInformation": "Pour plus d'informations",
   "application.referralApplication.instructions": "Les unités de logement permanent avec services de soutien sont référées directement via le système d'entrée coordonnée de <JURISDICTION>. Les ménages sans abri peuvent appeler le <PHONE_NUMBER> afin d'être mis en relation avec un point d'accès pour en savoir plus sur le système d'entrée coordonnée et accéder aux ressources et informations liées au logement.",
   "application.referralApplication.phoneNumber": "211",
-  "application.review.confirmation.applicationReceived": "Demande 
-reçue",
-  "application.review.confirmation.applicationsClosed": "Demande 
-clôturée",
-  "application.review.confirmation.applicationsRanked": "Demande 
-classée",
+  "application.review.confirmation.applicationReceived": "Demande reçue",
+  "application.review.confirmation.applicationsClosed": "Demande clôturée",
+  "application.review.confirmation.applicationsRanked": "Demande classée",
   "application.review.confirmation.browseMore": "Parcourir plus d'annonces",
   "application.review.confirmation.createAccount": "### Souhaitez-vous créer un compte ?\n\nLa création d'un compte enregistrera vos informations pour les futures demandes, et vous pourrez vérifier le statut de cette demande à tout moment.",
   "application.review.confirmation.createAccountParagraph": "La création d'un compte enregistrera vos informations pour les futures demandes, et vous pourrez vérifier le statut de cette demande à tout moment.",
