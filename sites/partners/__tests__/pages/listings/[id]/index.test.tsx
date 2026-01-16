@@ -80,7 +80,7 @@ function mockJurisdictionsHaveFeatureFlagOn(
   featureFlag: string,
   overrides?: {
     enableHomeType?: boolean
-    enableSection8Question?: boolean
+    enableRentalSubsidyQuestion?: boolean
     enableUnitGroups?: boolean
     enableIsVerified?: boolean
     enableMarketingStatus?: boolean
@@ -91,8 +91,8 @@ function mockJurisdictionsHaveFeatureFlagOn(
   switch (featureFlag) {
     case FeatureFlagEnum.enableHomeType:
       return overrides?.enableHomeType ?? true
-    case FeatureFlagEnum.enableSection8Question:
-      return overrides?.enableSection8Question ?? true
+    case FeatureFlagEnum.enableRentalSubsidyQuestion:
+      return overrides?.enableRentalSubsidyQuestion ?? true
     case FeatureFlagEnum.enableUnitGroups:
       return overrides?.enableUnitGroups ?? false
     case FeatureFlagEnum.enableIsVerified:
@@ -1873,7 +1873,7 @@ describe("listing data", () => {
               doJurisdictionsHaveFeatureFlagOn: (featureFlag) =>
                 mockJurisdictionsHaveFeatureFlagOn(featureFlag, {
                   enableHomeType: true,
-                  enableSection8Question: true,
+                  enableRentalSubsidyQuestion: true,
                   enableUnitGroups: false,
                   enableIsVerified: false,
                 }),

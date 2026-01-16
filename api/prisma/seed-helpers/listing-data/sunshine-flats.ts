@@ -5,7 +5,7 @@ import {
   ApplicationMethodsTypeEnum,
 } from '@prisma/client';
 import dayjs from 'dayjs';
-import { glacierAddress } from '../address-factory';
+import { kelownaAddress } from '../address-factory';
 
 export const sunshineFlats: Prisma.ListingsCreateInput = {
   additionalApplicationSubmissionNotes: null,
@@ -52,13 +52,13 @@ export const sunshineFlats: Prisma.ListingsCreateInput = {
   leasingAgentEmail: 'bloom@exygy.com',
   leasingAgentName: 'Bloom Bloomington',
   leasingAgentOfficeHours: null,
-  leasingAgentPhone: '(313) 555-5555',
+  leasingAgentPhone: '(250) 555-7890',
   leasingAgentTitle: null,
   name: 'Sunshine Flats',
   postmarkedApplicationsReceivedByDate: null,
   programRules: null,
   rentalAssistance:
-    'Housing Choice Vouchers, Section 8 and other valid rental assistance programs will be considered for this property. In the case of a valid rental subsidy, the required minimum income will be based on the portion of the rent that the tenant pays after use of the subsidy.',
+    'RAP, SAFER, RGI and other valid rental assistance programs will be considered for this property. In the case of a valid rental subsidy, the required minimum income will be based on the portion of the rent that the tenant pays after use of the subsidy.',
   rentalHistory: null,
   requiredDocuments: null,
   specialNotes: null,
@@ -78,7 +78,7 @@ export const sunshineFlats: Prisma.ListingsCreateInput = {
   contentUpdatedAt: new Date(),
   publishedAt: new Date(),
   listingsBuildingAddress: {
-    create: glacierAddress,
+    create: kelownaAddress,
   },
   listingsApplicationPickUpAddress: undefined,
   listingsLeasingAgentAddress: undefined,

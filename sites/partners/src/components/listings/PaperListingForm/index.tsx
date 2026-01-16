@@ -359,7 +359,7 @@ const ListingForm = ({
 
           if (
             !doJurisdictionsHaveFeatureFlagOn(
-              FeatureFlagEnum.enableSection8Question,
+              FeatureFlagEnum.enableRentalSubsidyQuestion,
               jurisdictionId
             )
           ) {

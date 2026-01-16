@@ -40,7 +40,7 @@ export enum FeatureFlagEnum {
   enableProperties = 'enableProperties',
   enableReferralQuestionUnits = 'enableReferralQuestionUnits',
   enableRegions = 'enableRegions',
-  enableSection8Question = 'enableSection8Question',
+  enableRentalSubsidyQuestion = 'enableRentalSubsidyQuestion',
   enableSingleUseCode = 'enableSingleUseCode',
   enableSmokingPolicyRadio = 'enableSmokingPolicyRadio',
   enableSupportAdmin = 'enableSupportAdmin',
@@ -95,7 +95,7 @@ export const featureFlagMap: {
   {
     name: FeatureFlagEnum.enableAdaOtherOption,
     description:
-      "When true, the ADA impairment options will include 'For Other Impairments'",
+      "When true, the accessibility impairment options will include 'For Other Impairments'",
   },
   {
     name: FeatureFlagEnum.enableAdditionalResources,
@@ -244,8 +244,8 @@ export const featureFlagMap: {
       'When true, the region can be defined for the building address',
   },
   {
-    name: FeatureFlagEnum.enableSection8Question,
-    description: 'When true, the Section 8 listing data will be visible',
+    name: FeatureFlagEnum.enableRentalSubsidyQuestion,
+    description: 'When true, the rental subsidy listing data will be visible',
   },
   {
     name: FeatureFlagEnum.enableSingleUseCode,

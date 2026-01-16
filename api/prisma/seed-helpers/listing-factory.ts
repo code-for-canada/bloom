@@ -300,7 +300,7 @@ const buildingFeatures = (includeBuildingFeatures: boolean) => {
       'Laundry facilities, Elevators, Beautifully landscaped garden, walkways',
     unitAmenities: 'All-electric kitchen, Dishwasher',
     petPolicy: 'Allow pets with a deposit of $500',
-    accessibility: 'ADA units available',
+    accessibility: 'Accessible units available',
     smokingPolicy: 'Non-smoking building',
     servicesOffered: 'Resident services on-site.',
   };

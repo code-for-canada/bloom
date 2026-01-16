@@ -28,8 +28,8 @@ const DetailUnits = ({ setUnitDrawer }: DetailUnitsProps) => {
     listing.jurisdictions.id
   )
 
-  const enableSection8Question = doJurisdictionsHaveFeatureFlagOn(
-    FeatureFlagEnum.enableSection8Question,
+  const enableRentalSubsidyQuestion = doJurisdictionsHaveFeatureFlagOn(
+    FeatureFlagEnum.enableRentalSubsidyQuestion,
     listing.jurisdictions.id
   )
 
@@ -215,7 +215,7 @@ const DetailUnits = ({ setUnitDrawer }: DetailUnitsProps) => {
           )}
         </Grid.Cell>
       </Grid.Row>
-      {enableSection8Question && (
+      {enableRentalSubsidyQuestion && (
         <Grid.Row>
           <Grid.Cell>
             <FieldValue

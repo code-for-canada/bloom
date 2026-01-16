@@ -19,7 +19,7 @@ export const findValidatedAddress = (
 
   geocodingClient
     .forwardGeocode({
-      query: `${address.street}, ${address.city}, ${address.state} ${address.zipCode}, United States`,
+      query: `${address.street}, ${address.city}, ${address.state} ${address.zipCode}, Canada`,
       limit: 1,
       types: ["address"],
     })

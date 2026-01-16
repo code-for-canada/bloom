@@ -4,7 +4,7 @@ import {
   ReviewOrderTypeEnum,
 } from '@prisma/client';
 import dayjs from 'dayjs';
-import { yellowstoneAddress } from '../address-factory';
+import { burnabyAddress } from '../address-factory';
 
 export const hollywoodHillsHeights = {
   additionalApplicationSubmissionNotes: null,
@@ -50,13 +50,13 @@ export const hollywoodHillsHeights = {
   leasingAgentEmail: 'bloom@exygy.com',
   leasingAgentName: 'Bloom Bloomington',
   leasingAgentOfficeHours: null,
-  leasingAgentPhone: '(651) 555-5555',
+  leasingAgentPhone: '(604) 555-4567',
   leasingAgentTitle: null,
   name: 'Hollywood Hills Heights',
   postmarkedApplicationsReceivedByDate: null,
   programRules: null,
   rentalAssistance:
-    'Housing Choice Vouchers, Section 8 and other valid rental assistance programs will be considered for this property. In the case of a valid rental subsidy, the required minimum income will be based on the portion of the rent that the tenant pays after use of the subsidy.',
+    'RAP, SAFER, RGI and other valid rental assistance programs will be considered for this property. In the case of a valid rental subsidy, the required minimum income will be based on the portion of the rent that the tenant pays after use of the subsidy.',
   rentalHistory: null,
   requiredDocuments: null,
   specialNotes: null,
@@ -77,7 +77,7 @@ export const hollywoodHillsHeights = {
   contentUpdatedAt: new Date(),
   publishedAt: new Date(),
   listingsBuildingAddress: {
-    create: yellowstoneAddress,
+    create: burnabyAddress,
   },
   listingsApplicationPickUpAddress: undefined,
   listingsLeasingAgentAddress: undefined,

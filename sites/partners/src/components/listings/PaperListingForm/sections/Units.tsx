@@ -92,8 +92,8 @@ const FormUnits = ({
     true
   )
 
-  const enableSection8Question = doJurisdictionsHaveFeatureFlagOn(
-    FeatureFlagEnum.enableSection8Question,
+  const enableRentalSubsidyQuestion = doJurisdictionsHaveFeatureFlagOn(
+    FeatureFlagEnum.enableRentalSubsidyQuestion,
     jurisdiction,
     true
   )
@@ -483,7 +483,7 @@ const FormUnits = ({
           )}
         </Grid.Row>
 
-        {enableSection8Question && (
+        {enableRentalSubsidyQuestion && (
           <Grid.Row>
             <Grid.Cell>
               <FieldGroup

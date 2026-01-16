@@ -42,13 +42,13 @@ function mockJurisdictionsHaveFeatureFlagOn(
   enableListingUpdatedAt = true,
   enableUnitGroups = false,
   enableHomeType = true,
-  enableSection8Question = true
+  enableRentalSubsidyQuestion = true
 ) {
   switch (featureFlag) {
     case FeatureFlagEnum.enableHomeType:
       return enableHomeType
-    case FeatureFlagEnum.enableSection8Question:
-      return enableSection8Question
+    case FeatureFlagEnum.enableRentalSubsidyQuestion:
+      return enableRentalSubsidyQuestion
     case FeatureFlagEnum.enableUnitGroups:
       return enableUnitGroups
     case FeatureFlagEnum.enableIsVerified:

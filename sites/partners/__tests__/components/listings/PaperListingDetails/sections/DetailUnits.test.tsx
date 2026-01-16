@@ -17,15 +17,15 @@ import { AuthContext } from "@bloom-housing/shared-helpers"
 function mockJurisdictionsHaveFeatureFlagOn(
   featureFlag: string,
   enableHomeType = true,
-  enableSection8Question = true,
+  enableRentalSubsidyQuestion = true,
   enableUnitGroups = false,
   enableNonRegulatedListings = false
 ) {
   switch (featureFlag) {
     case FeatureFlagEnum.enableHomeType:
       return enableHomeType
-    case FeatureFlagEnum.enableSection8Question:
-      return enableSection8Question
+    case FeatureFlagEnum.enableRentalSubsidyQuestion:
+      return enableRentalSubsidyQuestion
     case FeatureFlagEnum.enableUnitGroups:
       return enableUnitGroups
     case FeatureFlagEnum.enableNonRegulatedListings:

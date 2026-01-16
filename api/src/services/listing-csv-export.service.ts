@@ -89,7 +89,7 @@ export const formatCommunityType = {
   specialNeeds: 'Special Needs',
   developmentalDisability: 'Developmental Disability',
   farmworkerHousing: 'Farmworker Housing',
-  housingVoucher: 'HCV/Section 8 Voucher',
+  housingVoucher: 'Rental Subsidy',
   senior: 'Seniors',
   seniorVeterans: 'Senior Veteran',
   veteran: 'Veteran',
@@ -651,12 +651,12 @@ export class ListingCsvExporterService implements CsvExporterServiceInterface {
     if (
       doAnyJurisdictionHaveFeatureFlagSet(
         user.jurisdictions,
-        FeatureFlagEnum.enableSection8Question,
+        FeatureFlagEnum.enableRentalSubsidyQuestion,
       )
     ) {
       headers.push({
         path: 'section8Acceptance',
-        label: 'Accept Section 8',
+        label: 'Accept Rental Subsidies',
         format: this.formatYesNo,
       });
     }

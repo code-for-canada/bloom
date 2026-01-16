@@ -7,9 +7,9 @@ import {
 } from '@prisma/client';
 import dayjs from 'dayjs';
 import {
-  rockyMountainAddress,
-  yellowstoneAddress,
-  yosemiteAddress,
+  surreyAddress,
+  vancouverDowntownAddress,
+  victoriaAddress,
 } from '../address-factory';
 
 export const blueSkyApartments = {
@@ -57,13 +57,13 @@ export const blueSkyApartments = {
   leasingAgentEmail: 'joe@smithrealty.com',
   leasingAgentName: 'Joe Smith',
   leasingAgentOfficeHours: '9:00am - 5:00pm, Monday-Friday',
-  leasingAgentPhone: '(773) 580-5897',
+  leasingAgentPhone: '(604) 555-1234',
   leasingAgentTitle: 'Senior Leasing Agent',
   name: 'Blue Sky Apartments',
   postmarkedApplicationsReceivedByDate: '2025-06-06T23:00:00.000Z',
   programRules: null,
   rentalAssistance:
-    'Housing Choice Vouchers, Section 8 and other valid rental assistance programs will be considered for this property. ',
+    'RAP, SAFER, RGI and other valid rental assistance programs will be considered for this property. ',
   rentalHistory: null,
   requiredDocuments: null,
   specialNotes: null,
@@ -84,19 +84,19 @@ export const blueSkyApartments = {
   contentUpdatedAt: new Date(),
   publishedAt: new Date(),
   listingsBuildingAddress: {
-    create: yellowstoneAddress,
+    create: vancouverDowntownAddress,
   },
   listingsApplicationMailingAddress: {
-    create: rockyMountainAddress,
+    create: surreyAddress,
   },
   listingsApplicationPickUpAddress: {
-    create: yosemiteAddress,
+    create: victoriaAddress,
   },
   listingsLeasingAgentAddress: {
-    create: rockyMountainAddress,
+    create: surreyAddress,
   },
   listingsApplicationDropOffAddress: {
-    create: yosemiteAddress,
+    create: victoriaAddress,
   },
   reservedCommunityTypes: undefined,
   listingImages: {

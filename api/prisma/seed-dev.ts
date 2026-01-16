@@ -137,7 +137,7 @@ export const devSeeding = async (
 
   await prismaClient.featureFlags.create({
     data: featureFlagFactory(
-      'enableSection8Question',
+      'enableRentalSubsidyQuestion',
       false,
       'When true, the Section 8 listing data will be visible',
       [jurisdiction.id],

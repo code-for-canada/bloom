@@ -28,7 +28,7 @@ describe("applications pages", () => {
 
       expect(
         getByText(
-          "Do you or anyone in your household need any of the following ADA accessibility features?"
+          "Do you or anyone in your household need any of the following accessibility features?"
         )
       ).toBeInTheDocument()
       expect(getByTestId("app-ada-mobility")).toBeInTheDocument()
