@@ -1161,10 +1161,11 @@ enum ApplicationMethodsTypeEnum {
 
 enum LanguagesEnum {
   en
-  es
-  vi
+  fr
   zh
   tl
+  vi
+  es
   bn
   ar
 

@@ -8775,10 +8775,11 @@ export enum ApplicationMethodsTypeEnum {
 
 export enum LanguagesEnum {
   "en" = "en",
-  "es" = "es",
-  "vi" = "vi",
+  "fr" = "fr",
   "zh" = "zh",
   "tl" = "tl",
+  "vi" = "vi",
+  "es" = "es",
   "bn" = "bn",
   "ar" = "ar",
 }

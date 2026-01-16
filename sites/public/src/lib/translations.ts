@@ -5,15 +5,17 @@ import vietnameseTranslations from "@bloom-housing/shared-helpers/src/locales/vi
 import tagalogTranslations from "@bloom-housing/shared-helpers/src/locales/tl.json"
 import bengaliTranslations from "@bloom-housing/shared-helpers/src/locales/bn.json"
 import arabicTranslations from "@bloom-housing/shared-helpers/src/locales/ar.json"
+import frenchTranslations from "@bloom-housing/shared-helpers/src/locales/fr.json"
 
 import additionalGeneralTranslations from "../../page_content/locale_overrides/general.json"
 
 export const translations = {
   general: generalTranslations,
-  es: spanishTranslations,
+  fr: frenchTranslations,
   zh: chineseTranslations,
-  vi: vietnameseTranslations,
   tl: tagalogTranslations,
+  vi: vietnameseTranslations,
+  es: spanishTranslations,
   bn: bengaliTranslations,
   ar: arabicTranslations,
 } as Record<string, any>
