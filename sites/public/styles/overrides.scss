@@ -1,4 +1,14 @@
 :root {
+  --seeds-color-primary-darker: #00616a;
+  --seeds-color-primary-dark: #0077be;
+  --seeds-color-primary: #1877bd;
+  --seeds-color-primary-light: #49c7eb;
+  --seeds-color-primary-lighter: #f4f4f4;
+  --seeds-bg-color-surface-primary: var(--seeds-color-primary-lighter);
+  --seeds-bg-color-surface-primary-inverse: var(--seeds-color-primary-darker);
+  --bloom-color-primary: var(--seeds-color-primary);
+  --bloom-color-primary-dark: var(--seeds-color-primary-dark);
+
   .seeds-button {
     -webkit-font-smoothing: antialiased; // restore macOS styling that had been unset
   }

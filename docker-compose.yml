@@ -171,7 +171,7 @@ services:
       MAX_BROWSE_LISTINGS: 10
       HOUSING_COUNSELOR_SERVICE_URL: "/get-assistance"
 
-      JURISDICTION_NAME: "Bloomington"
+      JURISDICTION_NAME: "British Columbia"
       CLOUDINARY_CLOUD_NAME: "exygy"
 
       LANGUAGES: "en,es,zh,vi,tl"

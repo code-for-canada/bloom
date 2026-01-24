@@ -78,7 +78,7 @@ module "bloom_deployment" {
   bloom_site_partners_image = "ghcr.io/bloom-housing/bloom/partners:gitsha-f642fc1f3f056b9fa53429c4fa81689c5e856e5a"
   bloom_site_public_image   = "ghcr.io/bloom-housing/bloom/public:gitsha-f642fc1f3f056b9fa53429c4fa81689c5e856e5a"
   bloom_site_public_env_vars = {
-    JURISDICTION_NAME     = "Bloomington"
+    JURISDICTION_NAME     = "British Columbia"
     CLOUDINARY_CLOUD_NAME = "exygy"
     LANGUAGES             = "en,es,zh,vi,tl"
     RTL_LANGUAGES         = "ar"

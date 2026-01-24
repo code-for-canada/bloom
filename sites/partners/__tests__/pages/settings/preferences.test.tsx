@@ -201,7 +201,7 @@ describe("settings", () => {
       expect(rows).toHaveLength(1)
       const [name, jurisdiction, updated, actions] = within(rows[0]).getAllByRole("cell")
       expect(name).toHaveTextContent(multiselectQuestionPreference.text)
-      expect(jurisdiction).toHaveTextContent("Bloomington")
+      expect(jurisdiction).toHaveTextContent("British Columbia")
       expect(updated).toHaveTextContent("09/15/2022")
       const actionButtons = within(actions).getAllByRole("button")
       expect(actionButtons).toHaveLength(3)

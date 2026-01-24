@@ -245,7 +245,7 @@ describe("<ListingBrowse>", () => {
                         name: "Divine Orchard",
                         jurisdictions: {
                           id: "e674b260-d26f-462a-9090-abaabe939cae",
-                          name: "Bloomington",
+                          name: "British Columbia",
                         },
                       },
                     },

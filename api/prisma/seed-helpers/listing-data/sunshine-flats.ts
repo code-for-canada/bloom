@@ -50,7 +50,7 @@ export const sunshineFlats: Prisma.ListingsCreateInput = {
     "or one month's rent may be higher for lower credit scores",
   disableUnitsAccordion: false,
   leasingAgentEmail: 'bloom@exygy.com',
-  leasingAgentName: 'Bloom Bloomington',
+  leasingAgentName: 'BC Housing',
   leasingAgentOfficeHours: null,
   leasingAgentPhone: '(250) 555-7890',
   leasingAgentTitle: null,

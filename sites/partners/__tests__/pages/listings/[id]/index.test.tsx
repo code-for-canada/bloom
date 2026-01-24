@@ -128,7 +128,7 @@ describe("listing data", () => {
       expect(screen.getByText("Date created")).toBeInTheDocument()
       expect(screen.getByText("02/03/2025 at 10:13 AM")).toBeInTheDocument()
       expect(screen.getByText("Jurisdiction")).toBeInTheDocument()
-      expect(screen.getByText("Bloomington")).toBeInTheDocument()
+      expect(screen.getByText("British Columbia")).toBeInTheDocument()
     })
 
     it("should display Listing Data section but no jurisdiction", () => {

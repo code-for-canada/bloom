@@ -23,8 +23,8 @@ const server = setupServer()
 const jurisdictions = [
   {
     ...mockBaseJurisdiction,
-    id: "Bloomington",
-    name: "Bloomington",
+    id: "British Columbia",
+    name: "British Columbia",
     featureFlags: [
       { name: FeatureFlagEnum.enableRegions, active: true } as FeatureFlag,
       { name: FeatureFlagEnum.enableHomeType, active: true } as FeatureFlag,
@@ -130,7 +130,7 @@ describe("add listing", () => {
           getJurisdictionLanguages: () => [],
         }}
       >
-        <ListingForm jurisdictionId={"Bloomington"} />
+        <ListingForm jurisdictionId={"British Columbia"} />
       </AuthContext.Provider>
     )
 
@@ -217,7 +217,7 @@ describe("add listing", () => {
           } as unknown as JurisdictionsService,
         }}
       >
-        <ListingForm jurisdictionId={"Bloomington"} />
+        <ListingForm jurisdictionId={"British Columbia"} />
       </AuthContext.Provider>
     )
 
@@ -379,7 +379,7 @@ describe("add listing", () => {
           } as unknown as JurisdictionsService,
         }}
       >
-        <ListingForm jurisdictionId={"Bloomington"} />
+        <ListingForm jurisdictionId={"British Columbia"} />
       </AuthContext.Provider>
     )
 
@@ -495,7 +495,7 @@ describe("add listing", () => {
           } as unknown as JurisdictionsService,
         }}
       >
-        <ListingForm jurisdictionId={"Bloomington"} />
+        <ListingForm jurisdictionId={"British Columbia"} />
       </AuthContext.Provider>
     )
 

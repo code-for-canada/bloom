@@ -52,7 +52,7 @@ export const lakeviewVilla: Prisma.ListingsCreateInput = {
     "or one month's rent may be higher for lower credit scores",
   disableUnitsAccordion: false,
   leasingAgentEmail: 'bloom@exygy.com',
-  leasingAgentName: 'Bloom Bloomington',
+  leasingAgentName: 'BC Housing',
   leasingAgentOfficeHours: null,
   leasingAgentPhone: '(778) 555-5678',
   leasingAgentTitle: null,

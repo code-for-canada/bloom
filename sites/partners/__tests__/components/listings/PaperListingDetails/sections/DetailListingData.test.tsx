@@ -12,7 +12,7 @@ describe("DetailListingData", () => {
         value={{
           ...listing,
           createdAt: new Date("2023-01-01T10:00:00Z"),
-          jurisdictions: { name: "Bloomington", id: "1" },
+          jurisdictions: { name: "British Columbia", id: "1" },
           id: "1234",
           reviewOrderType: ReviewOrderTypeEnum.waitlist,
           units: [],
@@ -25,7 +25,7 @@ describe("DetailListingData", () => {
     expect(screen.getByText("Date created")).toBeInTheDocument()
     expect(screen.getByText("01/01/2023 at 10:00 AM")).toBeInTheDocument()
     expect(screen.getByText("Jurisdiction")).toBeInTheDocument()
-    expect(screen.getByText("Bloomington")).toBeInTheDocument()
+    expect(screen.getByText("British Columbia")).toBeInTheDocument()
     expect(screen.getByText("Listing ID")).toBeInTheDocument()
     expect(screen.getByText("1234")).toBeInTheDocument()
   })
@@ -36,7 +36,7 @@ describe("DetailListingData", () => {
         value={{
           ...listing,
           createdAt: new Date("2023-01-01T10:00:00Z"),
-          jurisdictions: { name: "Bloomington", id: "1" },
+          jurisdictions: { name: "British Columbia", id: "1" },
           id: "1234",
           reviewOrderType: ReviewOrderTypeEnum.waitlist,
           units: [],
@@ -49,7 +49,7 @@ describe("DetailListingData", () => {
     expect(screen.getByText("Date created")).toBeInTheDocument()
     expect(screen.getByText("01/01/2023 at 10:00 AM")).toBeInTheDocument()
     expect(screen.queryByText("Jurisdiction")).not.toBeInTheDocument()
-    expect(screen.queryByText("Bloomington")).not.toBeInTheDocument()
+    expect(screen.queryByText("British Columbia")).not.toBeInTheDocument()
     expect(screen.getByText("Listing ID")).toBeInTheDocument()
     expect(screen.getByText("1234")).toBeInTheDocument()
   })

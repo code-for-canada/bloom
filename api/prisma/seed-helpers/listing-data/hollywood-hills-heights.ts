@@ -48,7 +48,7 @@ export const hollywoodHillsHeights = {
     "or one month's rent may be higher for lower credit scores",
   disableUnitsAccordion: false,
   leasingAgentEmail: 'bloom@exygy.com',
-  leasingAgentName: 'Bloom Bloomington',
+  leasingAgentName: 'BC Housing',
   leasingAgentOfficeHours: null,
   leasingAgentPhone: '(604) 555-4567',
   leasingAgentTitle: null,

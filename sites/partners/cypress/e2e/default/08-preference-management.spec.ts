@@ -24,7 +24,7 @@ describe("Preference Management Tests", () => {
     cy.getByTestId("preference-link").type("https://www.example.com")
     cy.getByTestId("preference-link-title").type("Preference Link Title")
 
-    cy.getByTestId("preference-jurisdiction").select("Bloomington")
+    cy.getByTestId("preference-jurisdiction").select("British Columbia")
     cy.getByID("preference-add-option-button").click()
     cy.getByTestId("preference-option-title").type("Preference Option Title")
     cy.getByTestId("preference-option-description").type("Preference Option Description", {
@@ -84,7 +84,7 @@ describe("Preference Management Tests", () => {
 
     cy.getByTestId("preference-opt-out-label").should("have.value", "Preference Opt Out Label")
     cy.getByTestId("show-on-listing-question-yes").should("have.value", "yes")
-    cy.getByTestId("preference-jurisdiction").contains("Bloomington")
+    cy.getByTestId("preference-jurisdiction").contains("British Columbia")
     cy.getByID("preference-save-button").click()
   })
 })

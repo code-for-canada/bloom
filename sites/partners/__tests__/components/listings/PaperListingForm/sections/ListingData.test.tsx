@@ -25,7 +25,7 @@ describe("ListingData", () => {
       <FormProviderWrapper>
         <ListingData
           createdAt={new Date("2023-01-01T10:00:00Z")}
-          jurisdictionName={"Bloomington"}
+          jurisdictionName={"British Columbia"}
           listingId={"1234"}
         />
       </FormProviderWrapper>
@@ -35,7 +35,7 @@ describe("ListingData", () => {
     expect(screen.getByText("Date created")).toBeInTheDocument()
     expect(screen.getByText("01/01/2023 at 10:00 AM")).toBeInTheDocument()
     expect(screen.getByText("Jurisdiction")).toBeInTheDocument()
-    expect(screen.getByText("Bloomington")).toBeInTheDocument()
+    expect(screen.getByText("British Columbia")).toBeInTheDocument()
     expect(screen.getByText("Listing ID")).toBeInTheDocument()
     expect(screen.getByText("1234")).toBeInTheDocument()
   })

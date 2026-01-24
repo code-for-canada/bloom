@@ -30,7 +30,7 @@ export const multiselectQuestionPreference: MultiselectQuestion = {
   id: "id1",
   text: "Live/Work in County",
   subText: "Live/Work in County subtitle",
-  jurisdictions: [{ id: "1", name: "Bloomington" }],
+  jurisdictions: [{ id: "1", name: "British Columbia" }],
   createdAt: new Date("2022-09-14T22:53:09.982Z"),
   updatedAt: new Date("2022-09-15T22:53:09.982Z"),
   description: "At least one household member lives or works in County",
@@ -491,7 +491,7 @@ export const unitGroup: UnitGroup = {
         name: "Mock AMI",
         jurisdictions: {
           id: "Uvbk5qurpB2WI9V6WnNdH",
-          name: "Bloomington",
+          name: "British Columbia",
         },
       },
     },
@@ -636,7 +636,7 @@ export const amiCharts = [
 ]
 
 export const jurisdiction: Jurisdiction = {
-  name: "Bloomington",
+  name: "British Columbia",
   notificationsSignUpUrl: "https://public.govdelivery.com/accounts/CAALAME/signup/29652",
   languages: [LanguagesEnum.en],
   partnerTerms: undefined,
@@ -653,7 +653,7 @@ export const jurisdiction: Jurisdiction = {
     },
   ],
   requiredListingFields: [],
-  emailFromAddress: "Bloomington <bloom-no-reply@exygy.dev>",
+  emailFromAddress: "British Columbia <bloom-no-reply@exygy.dev>",
   rentalAssistanceDefault:
     "Housing Choice Vouchers, Section 8 and other valid rental assistance programs will be considered for this property. In the case of a valid rental subsidy, the required minimum income will be based on the portion of the rent that the tenant pays after use of the subsidy.",
   whatToExpect:
@@ -716,7 +716,7 @@ export const listing: Listing = {
   applicationLotteryTotals: [],
   jurisdictions: {
     id: "id",
-    name: "Bloomington",
+    name: "British Columbia",
   },
   depositMax: "",
   disableUnitsAccordion: false,

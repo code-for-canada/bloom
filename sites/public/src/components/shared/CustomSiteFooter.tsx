@@ -17,12 +17,7 @@ const CustomSiteFooter = () => {
             </div>
             <div className={styles["text-container"]}>
               <span>{t("footer.content.projectOf")}</span>
-              <Link href={"/"}>Mayor's Office of Housing Development</Link>
-            </div>
-            <div className={styles["text-container"]}>
-              <span>{t("footer.content.partnership")}</span>
-              <Link href={"/"}>Bloomington Department of Technology</Link>
-              <Link href={"/"}>Mayor's Office of Civic Innovation</Link>
+              <Link href={"/"}>BC Housing</Link>
             </div>
             <div className={styles["text-container"]}>
               <p>{t("footer.content.applicationQuestions")}</p>
