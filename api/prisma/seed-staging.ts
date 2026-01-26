@@ -541,7 +541,7 @@ export const stagingSeed = async (
   await unitAccessibilityPriorityTypeFactoryAll(prismaClient);
   await reservedCommunityTypeFactoryAll(mainJurisdiction.id, prismaClient);
   // list of predefined listings WARNING: images only work if image setup is cloudinary on exygy account
-  [
+  await Promise.all([
     {
       jurisdictionId: mainJurisdiction.id,
       listing: hollywoodHillsHeights,
@@ -1123,5 +1123,5 @@ export const stagingSeed = async (
         }),
       });
     },
-  );
+  ));
 };

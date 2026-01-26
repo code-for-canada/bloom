@@ -17,7 +17,7 @@ async function main() {
   const {
     values: { environment, jurisdictionName: jurisdictionNameArg },
   } = parseArgs({ options });
-  const jurisdictionName = jurisdictionNameArg || process.env.JURISDICTION_NAME;
+  const jurisdictionName = jurisdictionNameArg || process.env.JURISDICTION_NAME || 'British Columbia';
   switch (environment) {
     case 'production':
       // Setting up a production database we would just need the bare minimum such as jurisdiction
@@ -31,13 +31,13 @@ async function main() {
     case 'staging':
       // Staging setup should have realistic looking data with a preset list of listings
       // along with all of the required tables (ami, users, etc)
-      stagingSeed(prisma, jurisdictionName as string);
+      await stagingSeed(prisma, jurisdictionName as string);
       break;
     case 'development':
     default:
       // Development is less realistic data, but can be more experimental and also should
       // be partially randomized so we cover all bases
-      devSeeding(prisma, jurisdictionName as string);
+      await devSeeding(prisma, jurisdictionName as string);
       break;
   }
 }
