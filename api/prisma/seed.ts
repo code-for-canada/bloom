@@ -15,8 +15,9 @@ const options: { [name: string]: { type: 'string' | 'boolean' } } = {
 const prisma = new PrismaClient();
 async function main() {
   const {
-    values: { environment, jurisdictionName },
+    values: { environment, jurisdictionName: jurisdictionNameArg },
   } = parseArgs({ options });
+  const jurisdictionName = jurisdictionNameArg || process.env.JURISDICTION_NAME;
   switch (environment) {
     case 'production':
       // Setting up a production database we would just need the bare minimum such as jurisdiction
