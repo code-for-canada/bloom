@@ -137,9 +137,9 @@ export const stagingSeed = async (
       requiredListingFields: ['name', 'listingsBuildingAddress'],
       languages: [
         LanguagesEnum.en,
+        LanguagesEnum.fr,
         LanguagesEnum.es,
         LanguagesEnum.ar,
-        LanguagesEnum.bn,
       ],
     }),
   });
@@ -156,7 +156,7 @@ export const stagingSeed = async (
         FeatureFlagEnum.enablePartnerDemographics,
         FeatureFlagEnum.enablePartnerSettings,
       ],
-      languages: [LanguagesEnum.en, LanguagesEnum.es, LanguagesEnum.vi],
+      languages: [LanguagesEnum.en, LanguagesEnum.fr],
     }),
   });
   // Jurisdiction with no feature flags enabled
@@ -352,7 +352,7 @@ export const stagingSeed = async (
     }),
   });
   await prismaClient.translations.create({
-    data: translationFactory({ language: LanguagesEnum.es }),
+    data: translationFactory({ language: LanguagesEnum.fr }),
   });
   await prismaClient.translations.create({
     data: translationFactory(),
