@@ -216,6 +216,44 @@ const translations = (
         signIn: 'Sign in to Bloom Housing',
       },
     };
+  } else if (language === LanguagesEnum.fr) {
+    return {
+      t: {
+        hello: 'Bonjour',
+        seeListing: 'Voir la liste',
+        partnersPortal: 'Portail des partenaires',
+        viewListing: 'Voir la liste',
+        editListing: 'Modifier la liste',
+        reviewListing: 'Examiner la liste',
+      },
+      footer: {
+        line1: 'Bloom',
+        line2: '',
+        thankYou: 'Merci',
+        footer: 'Housing Hub',
+      },
+      header: {
+        logoUrl:
+          'https://res.cloudinary.com/exygy/image/upload/w_400,c_limit,q_65/dev/bloom_logo_generic_zgb4sg.jpg',
+        logoTitle: 'Portail Housing Hub',
+      },
+      confirmation: {
+        whatHappensNext: 'Que se passe-t-il ensuite?',
+        yourConfirmationNumber: 'Votre numéro de confirmation',
+        gotYourConfirmationNumber: 'Nous avons reçu votre demande pour',
+      },
+      leasingAgent: {
+        officeHours: 'Heures de bureau:',
+        propertyManager: 'Gestionnaire immobilier',
+      },
+      register: {
+        welcome: 'Bienvenue',
+        welcomeMessage: "Merci d'avoir créé votre compte sur %{appUrl}.",
+        confirmMyAccount: 'Confirmer mon compte',
+        toConfirmAccountMessage:
+          'Pour terminer la création de votre compte, veuillez cliquer sur le lien ci-dessous:',
+      },
+    };
   } else if (language === LanguagesEnum.es) {
     return {
       t: {

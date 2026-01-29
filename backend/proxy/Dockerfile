@@ -1,4 +1,4 @@
-FROM nginx:1.19.0
+FROM nginx:1.24
 
 MAINTAINER David Galoyan <davojan@gmail.com>
 
@@ -40,8 +40,8 @@ RUN cd /tmp/nginx && \
     BASE_CONFIGURE_ARGS=`nginx -V 2>&1 | grep "configure arguments" | cut -d " " -f 3-` && \
     /bin/sh -c "./configure ${BASE_CONFIGURE_ARGS} --add-module=/tmp/ngx_cache_purge" && \
     make && make install && \
-    rm -rf /tmp/nginx* \
+    rm -rf /tmp/nginx*
 
-    ENV PROTOCOL=https
+ENV PROTOCOL=https
 
 CMD /bin/bash -c "envsubst '\$PORT,\$BACKEND_HOSTNAME,\$PROTOCOL,\$ALLOW_LIST' < /etc/nginx/conf.d/default.conf.template > /etc/nginx/conf.d/default.conf && envsubst '\$PORT,\$BACKEND_HOSTNAME,\$PROTOCOL,\$ALLOW_LIST' < /etc/nginx/conf.d/shared-location.conf.template > /etc/nginx/shared-location.conf" && nginx -g 'daemon off;'
