@@ -47,12 +47,66 @@ export const HomeDeprecated = (props: HomeDeprecatedProps) => {
       </PageHero>
       <div className="homepage-extra">
         <div className="action-blocks mt-4 mb-4 w-full">
+          <ActionBlock
+            className="flex-1"
+            header={
+              <Heading priority={2} size="2xl">
+                1. Find all your affordable housing options in one place
+              </Heading>
+            }
+            icon={
+              <Icon size="2xl" outlined>
+                {CustomIconMap.mapPin}
+              </Icon>
+            }
+            actions={[
+              <Button
+                key={"sign-up"}
+                href={"/listings"}
+                variant="primary-outlined"
+                size="sm"
+                className="m-2"
+              >
+                {t("welcome.seeRentalListings")}
+              </Button>,
+            ]}
+          />
+
+          <ActionBlock
+            className="flex-1"
+            header={
+              <Heading priority={2} size="2xl">
+                2. Sign up once and reuse your application details every time
+              </Heading>
+            }
+            icon={
+              <Icon size="2xl" outlined>
+                {CustomIconMap.profile}
+              </Icon>
+            }
+            actions={[
+              <Button
+                key={"additional-resources"}
+                href="/sign-up"
+                variant="primary-outlined"
+                size="sm"
+                className="m-2"
+              >
+                Sign up
+              </Button>,
+            ]}
+          />
+        </div>
+      </div>
+      <hr />
+      <div className="homepage-extra">
+        <div className="action-blocks mt-4 mb-4 w-full">
           {props.jurisdiction && props.jurisdiction.notificationsSignUpUrl && (
             <ActionBlock
               className="flex-1"
               header={
                 <Heading priority={2} size="2xl">
-                  {t("welcome.signUp")}
+                  3. {t("welcome.signUp")}
                 </Heading>
               }
               icon={
@@ -77,7 +131,7 @@ export const HomeDeprecated = (props: HomeDeprecatedProps) => {
             className="flex-1"
             header={
               <Heading priority={2} size="2xl">
-                {t("welcome.seeMoreOpportunitiesTruncated")}
+                4. {t("welcome.seeMoreOpportunitiesTruncated")}
               </Heading>
             }
             icon={

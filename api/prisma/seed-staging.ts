@@ -460,7 +460,7 @@ export const stagingSeed = async (
         multiselectQuestion: {
           text: 'Veteran',
           description:
-            'Have you or anyone in your household served in the US military?',
+            'Have you or anyone in your household served in the military?',
           applicationSection:
             MultiselectQuestionsApplicationSectionEnum.programs,
           isExclusive: true,
@@ -506,9 +506,9 @@ export const stagingSeed = async (
   await prismaClient.multiselectQuestions.create({
     data: multiselectQuestionFactory(lakeviewJurisdiction.id, {
       multiselectQuestion: {
-        text: 'Seniors 62+',
+        text: 'Seniors 65+',
         description:
-          'Are you or anyone in your household 62 years of age or older?',
+          'Are you or anyone in your household 65 years of age or older?',
         applicationSection: MultiselectQuestionsApplicationSectionEnum.programs,
         isExclusive: true,
         options: [
