@@ -117,7 +117,7 @@ export const HomeDeprecated = (props: HomeDeprecatedProps) => {
               actions={[
                 <Button
                   key={"sign-up"}
-                  href={props.jurisdiction.notificationsSignUpUrl}
+                  href="/sign-up"
                   variant="primary-outlined"
                   size="sm"
                   className="m-2"
